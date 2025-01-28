@@ -35,7 +35,7 @@ export default function Header() {
               <div className="mx-auto max-w-2xl shrink-0 lg:mx-0 lg:pt-8">
                 {/* Logo and BuildSpace Name */}
                 <div className="flex items-center space-x-4">
-                  <img alt="BuildSpace Logo" src="../src/assets/buildspace-logo2.webp" className="h-14" />
+                  <img alt="BuildSpace Logo" src="src\assets\buildspace-logo2.webp" className="h-14" />
                   <h1 className="text-3xl font-semibold text-indigo-400 transition duration-300">BuildSpace</h1>
                 </div>
   
