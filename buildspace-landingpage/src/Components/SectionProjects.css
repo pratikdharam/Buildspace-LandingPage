@@ -1,0 +1,120 @@
+/* Flip Card Container */
+.flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 260px; /* Fixed height to prevent movement */
+    perspective: 1000px;
+    font-family: sans-serif;
+    margin: 0 auto;
+    position: relative; /* Ensures it stays in place */
+  }
+  
+  /* Inner Container with Rotation */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s ease-in-out;
+    transform-style: preserve-3d;
+  }
+  
+  /* Apply Rotation on Hover */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Front and Back Styling */
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    top: 0; /* Ensures the card doesn't move */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+  }
+  
+  /* Front Side (Image & Title) */
+  .flip-card-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+  
+  /* Title Overlay for Better Visibility */
+  .title-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+    padding: 8px 0;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+  }
+  
+  /* Back Side (Description & Button) */
+  .flip-card-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Start description from the top */
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #374151;
+    color: #ffffff;
+    transform: rotateY(180deg);
+    border-radius: 1rem;
+    padding: 16px;
+  }
+  
+  /* Ensures description starts from the top */
+  .description {
+    font-size: 0.9em;
+    text-align: center;
+    padding: 10px;
+    flex-grow: 1; /* Allows description to take space */
+    overflow: hidden;
+  }
+  
+  /* Visit Button at Bottom */
+  .visit-btn {
+    width: 90%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    background: #4f46e5;
+    color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 10px;
+  }
+  
+  .visit-btn:hover {
+    background-color: #4338ca;
+  }
+  
