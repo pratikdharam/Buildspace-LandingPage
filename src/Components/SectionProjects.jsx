@@ -42,7 +42,7 @@ const projects = [
       <div className="bg-gray-900 py-24 sm:py-32 text-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="max-w-2xl lg:max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-semibold sm:text-5xl text-indigo-400">What Projects Are Built?</h2>
+            <h2 className="text-4xl font-semibold sm:text-5xl text-indigo-400">What Projects Are Built..?</h2>
           </div>
   
           <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 max-w-full mx-auto">
